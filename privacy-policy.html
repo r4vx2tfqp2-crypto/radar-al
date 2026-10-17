@@ -8,55 +8,130 @@
     body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; color: #333; }
     h1 { color: #0e6655; }
     h2 { color: #117a65; margin-top: 30px; }
-    p { line-height: 1.6; }
+    p, li { line-height: 1.6; }
     .last-updated { color: #999; font-size: 14px; }
+    .lang { margin-top: 48px; padding-top: 24px; border-top: 2px solid #eee; }
   </style>
 </head>
 <body>
   <h1>🇦🇱 Radar.AL — Politika e Privatësisë</h1>
-  <p class="last-updated">Përditësuar: Prill 2026</p>
+  <p class="last-updated">Përditësuar: Tetor 2026 · <a href="#en">English below</a></p>
 
-  <h2>1. Informacioni që Mbledhim</h2>
-  <p>Radar.AL mbledh informacionin minimal të nevojshëm për të ofruar shërbimin tonë:</p>
+  <h2>1. Çfarë është Radar.AL</h2>
+  <p>Radar.AL është një aplikacion për sigurinë rrugore në Shqipëri dhe Kosovë: tregon shpejtësinë, sinjalizon kamerat e shpejtësisë dhe rreziqet e raportuara nga përdoruesit, dhe ofron një hartë ku përdoruesit shënojnë kontrollet e policisë. Shërbimi ofrohet në <strong>radar-al.vercel.app</strong> dhe në aplikacionet për telefon.</p>
+
+  <h2>2. Informacioni që Mbledhim</h2>
   <ul>
-    <li><strong>Të dhënat e vendndodhjes:</strong> Përdoren vetëm gjatë përdorimit aktiv të aplikacionit për të ofruar alarme të kamerave të shpejtësisë. Nuk ruhen pas mbylljes së aplikacionit.</li>
-    <li><strong>Raportimet e përdoruesve:</strong> Informacioni i raportuar vullnetarisht (aksidente, radare, etj.) ruhet në serverin tonë për periudhën e vlefshmërisë.</li>
-    <li><strong>Të dhënat e llogarisë:</strong> Email dhe emri i përdoruesit nëse zgjidhni të krijoni llogari.</li>
+    <li><strong>Vendndodhja:</strong> përdoret në pajisjen tuaj për të llogaritur shpejtësinë dhe për t'ju sinjalizuar. Vendndodhja juaj e vazhdueshme <strong>nuk dërgohet</strong> në serverin tonë. Dërgohet vetëm vendi që <strong>ju vetë raportoni</strong> (një rrezik, një kamerë ose një pikë në hartë), dhe kur kërkoni një rrugë, pika juaj e nisjes dhe destinacioni dërgohen te Google për ta llogaritur (në faqen web kalojnë përmes serverit tonë, pa u ruajtur). Vendndodhja është opsionale — aplikacioni funksionon edhe pa të, por pa shpejtësi dhe sinjalizime.</li>
+    <li><strong>Raportimet dhe pikat:</strong> lloji, vendi, ora dhe (për pikat) një shënim opsional deri në 140 karaktere që shkruani ju.</li>
+    <li><strong>Kamerat e shpejtësisë</strong> që shtoni: vendi dhe kufiri i shpejtësisë.</li>
+    <li><strong>Identifikuesi i pajisjes:</strong> një kod i rastësishëm që krijohet në pajisjen tuaj. Përdoret për të parandaluar votimet e dyfishta, për kufijtë kundër abuzimit dhe që të mund të fshini pikat tuaja. Nuk lidhet me emrin tuaj.</li>
+    <li><strong>Adresa IP:</strong> <strong>nuk ruhet kurrë</strong> si e tillë. Ruajmë vetëm një kod të njëanshëm (hash) të saj, që nuk mund të kthehet në adresën origjinale, për të kufizuar abuzimin.</li>
+    <li><strong>Llogaria (opsionale):</strong> email-i, emri i përdoruesit dhe fjalëkalimi, i cili ruhet vetëm i enkriptuar (hash). Llogaria nuk nevojitet për të përdorur aplikacionin.</li>
+    <li><strong>Cilësimet</strong> (gjuha, tema, zërat etj.) ruhen vetëm në pajisjen tuaj.</li>
   </ul>
 
-  <h2>2. Si i Përdorim të Dhënat</h2>
-  <p>Të dhënat tuaja përdoren vetëm për:</p>
+  <h2>3. Si i Përdorim të Dhënat</h2>
   <ul>
-    <li>Ofrimin e alarmeve të kamerave të shpejtësisë</li>
-    <li>Shfaqjen e raportimeve nga përdoruesit e tjerë</li>
-    <li>Planifikimin e rrugëve</li>
+    <li>Për të shfaqur kamerat, raportimet dhe pikat për të gjithë përdoruesit</li>
+    <li>Për sinjalizimet afër jush (llogariten në pajisjen tuaj)</li>
+    <li>Për planifikimin e rrugëve</li>
+    <li>Për të mbrojtur shërbimin nga spam-i dhe abuzimi</li>
+  </ul>
+  <p>Nuk përdorim reklama, nuk bëjmë profilizim dhe nuk shesim të dhëna.</p>
+
+  <h2>4. Ndarja e të Dhënave</h2>
+  <p>Raportimet, pikat dhe kamerat shfaqen publikisht për përdoruesit e tjerë <strong>pa treguar kush i ka shtuar</strong>. Ne <strong>nuk shesim dhe nuk tregtojmë</strong> të dhëna personale. Për të funksionuar, përdorim këta ofrues shërbimesh, të cilët mund t'i përpunojnë të dhënat jashtë Shqipërisë:</p>
+  <ul>
+    <li><strong>Vercel</strong> — strehimi i faqes dhe i serverit</li>
+    <li><strong>Railway</strong> — baza e të dhënave</li>
+    <li><strong>Google</strong> — harta (Google Maps), planifikimi i rrugëve dhe kërkimi i adresave. Kur hapni hartën, Google merr adresën tuaj IP dhe kërkesat e hartës sipas <a href="https://policies.google.com/privacy">Politikës së Privatësisë së Google</a>.</li>
   </ul>
 
-  <h2>3. Ndarja e të Dhënave</h2>
-  <p>Ne <strong>nuk shesim, nuk ndajmë dhe nuk tregtojmë</strong> të dhënat tuaja personale me palë të treta. Raportimet e vendndodhjes ndahen anonimisht me përdoruesit e tjerë të aplikacionit.</p>
-
-  <h2>4. Ruajtja e të Dhënave</h2>
-  <p>Të dhënat e vendndodhjes nuk ruhen pas mbylljes së aplikacionit. Raportimet e përdoruesve fshihen automatikisht pas 1 ore ose kur marrin 10 refuzime nga përdoruesit e tjerë.</p>
-
-  <h2>5. Siguria</h2>
-  <p>Të dhënat ruhen në mënyrë të sigurt duke përdorur Supabase, një platformë e certifikuar SOC 2. Të gjitha lidhjet janë të enkriptuara me SSL/TLS.</p>
-
-  <h2>6. Të Drejtat Tuaja</h2>
-  <p>Ju keni të drejtë të:</p>
+  <h2>5. Sa Kohë i Ruajmë</h2>
   <ul>
-    <li>Aksesoni të dhënat tuaja</li>
-    <li>Fshini llogarinë tuaj</li>
-    <li>Tërhiqni pëlqimin për mbledhjen e të dhënave</li>
+    <li><strong>Pikat në hartë:</strong> shfaqen 30 minuta dhe <strong>fshihen përgjithmonë</strong> brenda 24 orëve nga krijimi.</li>
+    <li><strong>Raportimet:</strong> shfaqen 1 orë (konfirmimet nga përdoruesit mund ta zgjasin), ose hiqen menjëherë pas 10 refuzimeve. Fshihen përgjithmonë brenda 24 orëve pas skadimit, bashkë me votat e tyre.</li>
+    <li><strong>Kodet (hash) e IP-ve për kufijtë kundër abuzimit:</strong> deri në 2 ditë.</li>
+    <li><strong>Kamerat e shpejtësisë:</strong> ruhen për sa kohë janë të dobishme për përdoruesit.</li>
+    <li><strong>Llogaria:</strong> derisa ta fshini.</li>
+    <li>Ofruesit e strehimit mund të mbajnë regjistra teknikë për një kohë të shkurtër sipas politikave të tyre.</li>
   </ul>
 
-  <h2>7. Fëmijët</h2>
+  <h2>6. Siguria</h2>
+  <p>Të gjitha lidhjet janë të enkriptuara me HTTPS. Fjalëkalimet dhe adresat IP ruhen vetëm si kode të njëanshme (hash). Baza e të dhënave mbrohet me fjalëkalim dhe lidhje të enkriptuar.</p>
+
+  <h2>7. Të Drejtat Tuaja</h2>
+  <ul>
+    <li><strong>Fshini llogarinë</strong> kurdo te <em>Profili Im → Fshi llogarinë</em>. Kjo fshin llogarinë, pikat dhe votat tuaja; raportimet dhe kamerat mbeten, por nuk lidhen më me ju.</li>
+    <li><strong>Fshini pikat tuaja</strong> direkt në hartë.</li>
+    <li>Kërkoni akses ose korrigjim të të dhënave tuaja.</li>
+    <li>Paraqisni ankesë te <strong>Komisioneri për të Drejtën e Informimit dhe Mbrojtjen e të Dhënave Personale</strong> (Shqipëri) ose te <strong>Agjencia për Informim dhe Privatësi</strong> (Kosovë).</li>
+  </ul>
+
+  <h2>8. Fëmijët</h2>
   <p>Radar.AL nuk është i destinuar për fëmijë nën moshën 13 vjeç. Ne nuk mbledhim me dashje të dhëna personale nga fëmijët.</p>
 
-  <h2>8. Ndryshimet e Politikës</h2>
+  <h2>9. Ndryshimet e Politikës</h2>
   <p>Mund të përditësojmë këtë politikë herë pas here. Ndryshimet do të publikohen në këtë faqe.</p>
 
-  <h2>9. Na Kontaktoni</h2>
+  <h2>10. Na Kontaktoni</h2>
   <p>Për çdo pyetje rreth privatësisë tuaj, na kontaktoni përmes faqes sonë zyrtare.</p>
+
+  <div class="lang" id="en">
+    <h1>Radar.AL — Privacy Policy</h1>
+    <p class="last-updated">Updated: October 2026</p>
+
+    <h2>1. What Radar.AL is</h2>
+    <p>Radar.AL is a road-safety app for Albania and Kosovo: it shows your speed, alerts you to speed cameras and user-reported hazards, and offers a map where users mark police checks. It runs at <strong>radar-al.vercel.app</strong> and in the mobile apps.</p>
+
+    <h2>2. Information we collect</h2>
+    <ul>
+      <li><strong>Location:</strong> used on your device to calculate speed and alerts. Your ongoing location is <strong>not sent</strong> to our server — only the spot you <strong>choose to report</strong> (a hazard, a camera or a map point), and, when you search for a route, your starting point and destination are sent to Google to calculate it (on the website they pass through our server without being stored). Location is optional; the app works without it, just without speed and alerts.</li>
+      <li><strong>Reports and points:</strong> type, location, time and (for points) an optional note of up to 140 characters that you write.</li>
+      <li><strong>Speed cameras</strong> you add: location and speed limit.</li>
+      <li><strong>Device identifier:</strong> a random code created on your device, used to prevent double votes, enforce abuse limits and let you delete your own points. It is not linked to your name.</li>
+      <li><strong>IP address:</strong> <strong>never stored</strong> as-is — only a one-way hash that cannot be turned back into the address, used to limit abuse.</li>
+      <li><strong>Account (optional):</strong> email, username and password, stored only as a hash. You don't need an account to use the app.</li>
+      <li><strong>Settings</strong> (language, theme, sounds, etc.) are stored only on your device.</li>
+    </ul>
+
+    <h2>3. How we use data</h2>
+    <p>To show cameras, reports and points to all users; for nearby alerts (computed on your device); for route planning; and to protect the service from spam and abuse. No ads, no profiling, no selling of data.</p>
+
+    <h2>4. Sharing</h2>
+    <p>Reports, points and cameras are shown publicly to other users <strong>without showing who added them</strong>. We <strong>do not sell or trade</strong> personal data. We use these service providers, which may process data outside Albania: <strong>Vercel</strong> (hosting), <strong>Railway</strong> (database) and <strong>Google</strong> (Maps, route planning and address search — when the map loads, Google receives your IP address and map requests under the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>).</p>
+
+    <h2>5. Retention</h2>
+    <ul>
+      <li><strong>Map points:</strong> shown for 30 minutes, <strong>permanently deleted</strong> within 24 hours of creation.</li>
+      <li><strong>Reports:</strong> shown for 1 hour (user confirmations can extend this), or removed immediately after 10 rejections. Permanently deleted within 24 hours after expiring, together with their votes.</li>
+      <li><strong>IP hashes for abuse limits:</strong> up to 2 days.</li>
+      <li><strong>Speed cameras:</strong> kept while useful to users.</li>
+      <li><strong>Account:</strong> until you delete it.</li>
+      <li>Hosting providers may keep short-lived technical logs under their own policies.</li>
+    </ul>
+
+    <h2>6. Security</h2>
+    <p>All connections use HTTPS. Passwords and IP addresses are stored only as one-way hashes. The database is password-protected and accessed over encrypted connections.</p>
+
+    <h2>7. Your rights</h2>
+    <ul>
+      <li><strong>Delete your account</strong> any time in <em>Profili Im → Fshi llogarinë</em>. This deletes your account, points and votes; reports and cameras stay but are no longer linked to you.</li>
+      <li><strong>Delete your own points</strong> directly on the map.</li>
+      <li>Request access to or correction of your data.</li>
+      <li>Complain to the <strong>Information and Data Protection Commissioner</strong> (Albania) or the <strong>Information and Privacy Agency</strong> (Kosovo).</li>
+    </ul>
+
+    <h2>8. Children</h2>
+    <p>Radar.AL is not intended for children under 13. We do not knowingly collect personal data from children.</p>
+
+    <h2>9. Changes</h2>
+    <p>We may update this policy from time to time. Changes will be published on this page.</p>
+
+    <h2>10. Contact</h2>
+    <p>For any privacy question, contact us through our official page.</p>
+  </div>
 
   <hr>
   <p style="text-align:center; color:#999;">© 2026 Radar.AL — Të gjitha të drejtat e rezervuara</p>
